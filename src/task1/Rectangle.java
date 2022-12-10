@@ -1,10 +1,12 @@
 package task1;
-public final class Rectangle extends Figure{
-    private int  a;
+
+public final class Rectangle extends Figure {
+    private int a;
     private int b;
-    public Rectangle( int a,  int b){
-        this.a=a;
-        this.b=b;
+
+    public Rectangle(int a, int b) {
+        this.a = a;
+        this.b = b;
         calculatePerimeter();
         calculateSquare();
 
@@ -14,7 +16,7 @@ public final class Rectangle extends Figure{
         return a;
     }
 
-    public void setA( int a) {
+    public void setA(int a) {
         this.a = a;
     }
 
@@ -22,19 +24,19 @@ public final class Rectangle extends Figure{
         return b;
     }
 
-    public void setB( int b) {
+    public void setB(int b) {
         this.b = b;
     }
 
     @Override
     public void calculateSquare() {
-       double square=a*b;
-         setSquare(square);
+        double square = a * b;
+        setSquare(square);
     }
 
     @Override
     public void calculatePerimeter() {
-     double perimeter=(a+b)*2;
+        double perimeter = (a + b) * 2;
         setPerimeter(perimeter);
 
     }

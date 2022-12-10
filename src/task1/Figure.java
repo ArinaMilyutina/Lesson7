@@ -1,9 +1,11 @@
 package task1;
-public  class Figure {
+
+public class Figure {
     private double square;
-    public  double perimeter;
+    public double perimeter;
 
     public double getSquare() {
+
         return square;
     }
 
@@ -12,21 +14,25 @@ public  class Figure {
     }
 
     public double getPerimeter() {
+
         return perimeter;
     }
 
     public void setPerimeter(double perimeter) {
+
         this.perimeter = perimeter;
     }
 
-    public void calculateSquare(){
+    public void calculateSquare() {
     }
-    public void calculatePerimeter(){
+
+    public void calculatePerimeter() {
     }
-    public static double sumPerimeters(Figure[] figures){
-        double sum=0;
-        for(int i=0;i<6;i++){
-            sum+=figures[i].perimeter;
+
+    public static double sumPerimeters(Figure[] figures) {
+        double sum = 0;
+        for (int i = 0; i < 6; i++) {
+            sum += figures[i].perimeter;
         }
         return sum;
     }

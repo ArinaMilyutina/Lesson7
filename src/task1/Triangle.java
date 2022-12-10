@@ -1,8 +1,9 @@
 package task1;
-public final class Triangle extends Figure{
-    private  int a;
+
+public final class Triangle extends Figure {
+    private int a;
     private int b;
-    private  int c;
+    private int c;
     private int h;
 
     public Triangle(int a, int b, int c, int h) {
@@ -48,13 +49,13 @@ public final class Triangle extends Figure{
 
     @Override
     public void calculateSquare() {
-        double square=(c*h)/2.0;
+        double square = (c * h) / 2.0;
         setSquare(square);
     }
 
     @Override
     public void calculatePerimeter() {
-        double perimeter=a+b+c;
+        double perimeter = a + b + c;
         setPerimeter(perimeter);
     }
 
