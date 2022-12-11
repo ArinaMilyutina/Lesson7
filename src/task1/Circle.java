@@ -1,7 +1,6 @@
 package task1;
 public final class Circle extends Figure{
     private double r;
-    public static final double pi=3.14;
 
     public Circle(double r) {
 
@@ -20,13 +19,13 @@ public final class Circle extends Figure{
 
     @Override
     public void calculateSquare() {
-         double square=r*r*pi;
+         double square=r*r*Math.PI;
          setSquare(square);
     }
 
     @Override
     public void calculatePerimeter() {
-         double perimeter=2*r*pi;
+         double perimeter=2*r*Math.PI;
          setPerimeter(perimeter);
     }
 }

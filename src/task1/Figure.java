@@ -1,6 +1,6 @@
 package task1;
 
-public class Figure {
+public abstract class Figure {
     private double square;
     public double perimeter;
 
@@ -23,11 +23,9 @@ public class Figure {
         this.perimeter = perimeter;
     }
 
-    public void calculateSquare() {
-    }
+    abstract public void calculateSquare();
 
-    public void calculatePerimeter() {
-    }
+    abstract public void calculatePerimeter();
 
     public static double sumPerimeters(Figure[] figures) {
         double sum = 0;
@@ -40,7 +38,7 @@ public class Figure {
     @Override
     public String toString() {
         return "square=" + square +
-                ", perimeter=" + perimeter +
+                ", perimeter="+perimeter+
                 ";";
     }
 }
