@@ -18,6 +18,7 @@ public class FinancialInvoice extends Document {
         this.totalAmount = totalAmount;
         this.code = code;
     }
+
     public int getTotalAmount() {
         return totalAmount;
     }

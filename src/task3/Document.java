@@ -29,6 +29,5 @@ public abstract class Document {
 
     public abstract void printInfo();
 
-    //public abstract String savingDocument();
 
 }

@@ -5,6 +5,7 @@ import java.util.Date;
 public class ContractWithInEmployee extends Document {
     private String name;
     private Date endDate;
+
     public ContractWithInEmployee() {
         super(1000, new Date(99999999999L));
         this.name = "Nastya Rabtsevich";
@@ -17,7 +18,6 @@ public class ContractWithInEmployee extends Document {
         this.endDate = endDate;
         printInfo();
     }
-
 
 
     public String getName() {
