@@ -32,5 +32,8 @@ public class Register {
     public void getLastDocumentInfo() {
         documents[pointer - 1].printInfo();
     }
+    public  void savingDocument(){
+        System.out.println ("The document is save in register.");
+    }
 
 }

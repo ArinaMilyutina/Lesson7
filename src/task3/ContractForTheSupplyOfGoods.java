@@ -17,7 +17,6 @@ public class ContractForTheSupplyOfGoods extends Document {
         this.type = type;
         this.count = count;
         printInfo();
-        savingDocument();
     }
 
     public String getType() {
@@ -39,11 +38,8 @@ public class ContractForTheSupplyOfGoods extends Document {
     @Override
     public void printInfo() {
         System.out.println("-----------------------------------------------\nContract for the supply of goods:\nNumber of document:" + getNumber() + ".\nType: " + getType() + ".\nCount: " + getCount() + ".\nDate of document: "
-                + getDate() + ".\n" + savingDocument());
+                + getDate() + ".\n");
     }
 
-    @Override
-    public String savingDocument() {
-        return "The document is save in register.";
-    }
+
 }

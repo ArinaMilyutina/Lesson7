@@ -6,7 +6,8 @@ public class FinancialInvoice extends Document {
     private int totalAmount;
     private int code;
 
-    public FinancialInvoice() {
+
+    public FinancialInvoice(int i, Date date) {
         super(222, new Date());
         this.totalAmount = 10000;
         this.code = 22;
@@ -16,10 +17,7 @@ public class FinancialInvoice extends Document {
         super(numberInDocument, date);
         this.totalAmount = totalAmount;
         this.code = code;
-        printInfo();
-        savingDocument();
     }
-
     public int getTotalAmount() {
         return totalAmount;
     }
@@ -38,11 +36,6 @@ public class FinancialInvoice extends Document {
 
     @Override
     public void printInfo() {
-        System.out.println("-----------------------------------------------\nFinancial invoice:\nNumber of document: " + getNumber() + ".\nDate of document: " + getDate() + ".\nDepartment code: " + getCode() + ".\nTotal amount for the month: " + getTotalAmount() + ".\n" + savingDocument());
-    }
-
-    @Override
-    public String savingDocument() {
-        return "The document is save in register.";
+        System.out.println("-----------------------------------------------\nFinancial invoice:\nNumber of document: " + getNumber() + ".\nDate of document: " + getDate() + ".\nDepartment code: " + getCode() + ".\nTotal amount for the month: " + getTotalAmount() + ".\n");
     }
 }
