@@ -10,7 +10,6 @@ public class Main {
         Register register = new Register();
         if (register.addDocument(contract1)) {
             register.getLastDocumentInfo();
-
         }
         if (register.addDocument(contract2)) {
             register.getLastDocumentInfo();

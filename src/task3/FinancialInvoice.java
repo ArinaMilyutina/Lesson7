@@ -7,10 +7,11 @@ public class FinancialInvoice extends Document {
     private int code;
 
 
-    public FinancialInvoice(int i, Date date) {
+    public FinancialInvoice() {
         super(222, new Date());
         this.totalAmount = 10000;
         this.code = 22;
+       // printInfo();
     }
 
     public FinancialInvoice(int numberInDocument, Date date, int totalAmount, int code) {
@@ -23,20 +24,13 @@ public class FinancialInvoice extends Document {
         return totalAmount;
     }
 
-    public void setTotalAmount(int totalAmount) {
-        this.totalAmount = totalAmount;
-    }
-
     public int getCode() {
         return code;
     }
 
-    public void setCode(int code) {
-        this.code = code;
-    }
-
     @Override
     public void printInfo() {
-        System.out.println("-----------------------------------------------\nFinancial invoice:\nNumber of document: " + getNumber() + ".\nDate of document: " + getDate() + ".\nDepartment code: " + getCode() + ".\nTotal amount for the month: " + getTotalAmount() + ".\n");
+        System.out.println("-----------------------------------------------\nFinancial invoice:\nNumber of document: " + getNumber() + ".\nDate of document: " + getDate() + ".\nDepartment code: " + getCode() + ".\nTotal amount for the month: "
+                + getTotalAmount() + ".\n");
     }
 }

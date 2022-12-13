@@ -16,7 +16,7 @@ public class ContractWithInEmployee extends Document {
         super(numberInDocument, date);
         this.name = name;
         this.endDate = endDate;
-        printInfo();
+        // printInfo();
     }
 
 
@@ -24,17 +24,11 @@ public class ContractWithInEmployee extends Document {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
 
     @Override
     public void printInfo() {
